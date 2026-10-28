@@ -1,0 +1,7 @@
+Put your advertisement video file here:
+Name your video:
+  ad_video.mp4
+
+Both of these paths will work automatically:
+1. videos/ad_video.mp4
+2. ad_video.mp4 (in the same folder as index.html)
