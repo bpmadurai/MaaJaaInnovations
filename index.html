@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f19">
+  <meta name="description" content="Maa Jaa Innovations is India's leading enterprise cinema media and screen advertising network across 12,500+ digital screens and 650+ cities across 28 states.">
+  <meta name="keywords" content="Maa Jaa Innovations, cinema advertising network, enterprise media network, theatre screen advertising, UFO Moviez, Qube Cinema, PVR INOX, Miraj Cinemas, Cinepolis, India corporate advertising">
+  <meta name="author" content="Maa Jaa Innovations">
+  <title>Maa Jaa Innovations | Enterprise Cinema Media Network & Advertising Solutions</title>
+  
+    <!-- Domain Logo & Favicon Links -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon-192.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://www.maajaainnovations.in/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured JSON-LD Data for SEO Ranking -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AdvertisingAgency",
+    "name": "Maa Jaa Innovations",
+    "alternateName": [
+      "Maajaa",
+      "Maja",
+      "Maja Innovation",
+      "Maja Innovations",
+      "Maajaa Innovation",
+      "Maajaa Innovations",
+      "Maa Jaa",
+      "Maa Jaa Innovations Chennai",
+      "Maa Jaa Innovations Madurai"
+    ],
+    "url": "https://www.maajaainnovations.in/",
+    "telephone": "+91-7695831102",
+    "email": "info@maajaainnovations.in",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "description": "Enterprise cinema advertising network handling 12,500+ digital screens across 650+ cities in 28 states. Unified network partner with UFO Moviez, Qube Cinema, PVR INOX, Miraj Cinemas, Cinépolis, and regional iconic theatres.",
+    "sameAs": [
+      "https://www.maajaainnovations.in"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Maa Jaa Innovations home">
+        <img src="navbar_logo.png" alt="Maa Jaa Innovations" class="brand-logo-img">
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#networks">Networks</a>
+        <a href="#services">Solutions</a>
+        <a href="#approach">Workflow</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact" class="nav-cta">Request Media Kit <span aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Corporate Hero Section -->
+    <section class="hero">
+      <div class="hero-glow-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="corporate-badge">
+            <span class="badge-dot"></span> PAN-INDIA CINEMA MEDIA NETWORK
+          </div>
+          <h1>Strategic Cinema Media.<br><span>Measurable Impact.</span></h1>
+          <p class="hero-support"><strong>Maa Jaa Innovations</strong> delivers seamless media placement, on-screen video ads, and theatre branding across leading digital multiplex and single-screen networks nationwide.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="hero-play-trigger"><span>▶</span> Play Cinema Showcase</button>
+            <a class="button button-secondary" href="#contact">Contact Media Team</a>
+          </div>
+          <div class="hero-trust-strip">
+            <span class="trust-stat"><strong>12,500+</strong> Screens</span>
+            <span class="trust-divider">|</span>
+            <span class="trust-stat"><strong>650+</strong> Cities</span>
+            <span class="trust-divider">|</span>
+            <span class="trust-stat"><strong>28</strong> States</span>
+          </div>
+        </div>
+
+        <!-- Corporate Executive Cinema Showcase -->
+        <div class="hero-theatre-showcase" role="region" aria-label="Cinema Media Simulator">
+          <div class="showcase-header">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <div class="showcase-status">
+              <span class="live-pulse"></span> THEATRICAL 4K SCOPE DISPLAY
+            </div>
+            <div class="showcase-resolution">2.39:1 CINEMASCOPE</div>
+          </div>
+
+          <div class="theatre-screen-frame">
+            <div class="screen-ambient-glow active-glow" id="screen-glow"></div>
+            <div class="theatre-screen-viewport">
+              <video id="theatre-video" autoplay loop muted playsinline preload="auto">
+                <source src="videos/ad_video.mp4" type="video/mp4">
+                <source src="ad_video.mp4" type="video/mp4">
+                Your browser does not support HTML5 cinema video.
+              </video>
+
+              <div class="screen-watermark">
+                <span class="wm-tag">MAA JAA ENTERPRISE MEDIA</span>
+              </div>
+
+              <button class="screen-play-overlay hidden" id="screen-play-btn" aria-label="Play or Pause Showcase">
+                <span class="play-triangle">▶</span>
+                <span class="play-text">RESUME PREVIEW</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="projector-light-cone"></div>
+
+          <div class="auditorium-seats-container">
+            <div class="seat-silhouettes-row row-far"></div>
+            <div class="seat-silhouettes-row row-mid"></div>
+            <div class="seat-silhouettes-row row-front"></div>
+          </div>
+
+          <div class="theatre-console">
+            <div class="console-left">
+              <button class="console-btn" id="ctrl-play-pause"><span>⏸</span> Pause</button>
+              <button class="console-btn" id="ctrl-mute"><span>🔊</span> Sound On</button>
+              <button class="console-btn" id="ctrl-lights"><span>💡</span> Dim Lights</button>
+            </div>
+            <div class="console-center">
+              <div class="time-readout"><span id="video-current-time">00:00</span> / <span id="video-duration">00:15</span></div>
+              <div class="console-progress"><div class="console-progress-bar" id="video-progress"></div></div>
+            </div>
+            <div class="console-right">
+              <button class="console-btn" id="ctrl-fullscreen" title="Full View">⛶ Fullscreen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate Performance Metrics -->
+    <section class="metrics-section" aria-label="National Reach and Network Performance">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-num">12,500+</div>
+            <div class="metric-title">Digital Screens Nationwide</div>
+            <p class="metric-desc">Seamless aggregation across leading national multiplex chains and premier single-screen auditoriums.</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">650+</div>
+            <div class="metric-title">Cities Across 28 States</div>
+            <p class="metric-desc">Strategic multi-tiered penetration ensuring extensive metro and high-yield regional market coverage.</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">100%</div>
+            <div class="metric-title">Captive, Non-Skippable</div>
+            <p class="metric-desc">Uncompromised viewer focus in distraction-free auditorium environments with verified seat occupancy.</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">48-HR</div>
+            <div class="metric-title">Rapid Ingest & CBFC RoC</div>
+            <p class="metric-desc">Fast-track digital server ingest, compliance oversight, and authenticated Release on Certificate documentation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Unified Network Handling Strip with Integrated Logos -->
+    <section class="network-strip" id="networks" aria-label="Unified Network Handling">
+      <div class="container network-box">
+        <div class="network-title">
+          <span class="network-badge">UNIFIED NETWORK PLATFORMS:</span>
+        </div>
+        <div class="network-marquee">
+          <div class="network-list">
+            <span class="network-item"><span class="brand-chip chip-ufo">UFO</span> UFO Moviez</span>
+            <span class="network-dot">•</span>
+            <span class="network-item"><span class="brand-chip chip-qube">Q</span> Qube Cinema (Real Image)</span>
+            <span class="network-dot">•</span>
+            <span class="network-item"><span class="brand-chip chip-pvr">PVR</span> PVR INOX</span>
+            <span class="network-dot">•</span>
+            <span class="network-item"><span class="brand-chip chip-miraj">M</span> Miraj Cinemas</span>
+            <span class="network-dot">•</span>
+            <span class="network-item"><span class="brand-chip chip-cinepolis">C</span> Cinépolis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Enterprise Section -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-card-visual">
+          <div class="executive-stat-card">
+            <img src="website_logo.png" alt="Maa Jaa Innovations Official Logo" class="brand-showcase-img">
+            <span class="exec-sub">CORPORATE REACH OVERVIEW</span>
+            <h3>National Scale.<br>Auditable Precision.</h3>
+            <div class="exec-stats-list">
+              <div><strong>12.5k+</strong><span>Integrated Screens</span></div>
+              <div><strong>650+</strong><span>Commercial Hubs</span></div>
+              <div><strong>48 Hrs</strong><span>Ingest SLA</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-copy">
+          <div class="section-badge">ABOUT MAA JAA INNOVATIONS</div>
+          <h2>Enterprise Media Distribution for Modern Brands.</h2>
+          <p>Maa Jaa Innovations is dedicated to delivering high-impact cinema advertising and immersive theatre media solutions across India. Our national footprint ensures your brand connects with high-value audiences at scale.</p>
+          <p>With unified access across major cinema technology platforms like <strong>UFO Moviez</strong> and <strong>Qube Cinema (Real Image)</strong>, alongside premier multiplex chains including <strong>PVR INOX, Miraj Cinemas, and Cinépolis</strong>, we handle campaign scheduling, CBFC coordination, and verification seamlessly.</p>
+          <div class="feature-bullets">
+            <div class="bullet-item"><span class="bullet-check">✓</span> Comprehensive Pan-India multi-chain execution</div>
+            <div class="bullet-item"><span class="bullet-check">✓</span> 48-Hour digital ingest SLA & official RoC reporting</div>
+            <div class="bullet-item"><span class="bullet-check">✓</span> High-frequency lobbies, standees & box office activations</div>
+            <div class="bullet-item"><span class="bullet-check">✓</span> Certified digital ingest directly into theatre projection servers</div>
+          </div>
+          <a class="corporate-link" href="#contact">Discuss Campaign Planning <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions / Services Section -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <div class="section-badge">SOLUTIONS & FORMATS</div>
+            <h2>Cinema Media Portfolio.</h2>
+          </div>
+          <p class="header-desc">Engineered for brands demanding high recall, verifiable compliance, and rapid multi-market deployment.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-top"><span class="service-icon">▣</span><span class="service-tag">ON-SCREEN</span></div>
+            <h3>On-Screen Cinema Advertisements</h3>
+            <p>Premium pre-show and interval commercial slots positioned across digital cinema projectors nationwide.</p>
+            <a href="#contact" data-service="On-screen cinema advertisements" class="card-link">Enquire Solution <span>→</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span class="service-icon">▤</span><span class="service-tag">DISPLAY</span></div>
+            <h3>Slide Advertisements</h3>
+            <p>High-resolution static digital slide placements offering repeated audience recall during house-fill intervals.</p>
+            <a href="#contact" data-service="Slide advertisements" class="card-link">Enquire Solution <span>→</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span class="service-icon">▧</span><span class="service-tag">ACTIVATION</span></div>
+            <h3>Theatre Space Branding</h3>
+            <p>Targeted touchpoint domination including lobby standees, kiosk takeovers, ticket jacket branding, and arch takeovers.</p>
+            <a href="#contact" data-service="Theatre branding" class="card-link">Enquire Solution <span>→</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span class="service-icon">◎</span><span class="service-tag">MANAGEMENT</span></div>
+            <h3>End-to-End Campaign Management</h3>
+            <p>Rigorous management covering format master creation, CBFC clearance workflows, verified server distribution, and RoC logs.</p>
+            <a href="#contact" data-service="Cinema campaign management" class="card-link">Enquire Solution <span>→</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span class="service-icon">▖</span><span class="service-tag">COVERAGE</span></div>
+            <h3>Regional & Pan-India Campaigns</h3>
+            <p>Custom geo-targeted plans across 650+ cities across 28 states for localized regional pushes or full national rollouts.</p>
+            <a href="#contact" data-service="Regional and pan-India campaigns" class="card-link">Enquire Solution <span>→</span></a>
+          </article>
+          <article class="service-card service-card-highlight">
+            <div class="service-top"><span class="service-icon">⇄</span><span class="service-tag">NETWORKS</span></div>
+            <h3>Strategic Theatre Partnerships</h3>
+            <p>Unified enterprise channel relations across UFO Moviez, Qube Cinema, PVR INOX, Miraj Cinemas, and Cinépolis.</p>
+            <a href="#partners" class="card-link">Explore Partnerships <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate Workflow / Approach -->
+    <section class="section approach-section" id="approach">
+      <div class="container approach-grid">
+        <div>
+          <div class="section-badge">EXECUTION PROTOCOL</div>
+          <h2>Structured Media Operations.</h2>
+          <p class="approach-intro">Our four-phase operational model ensures complete transparency, brand compliance, and on-schedule exhibition.</p>
+          <a class="button button-primary" href="#contact">Initiate Brief <span>→</span></a>
+        </div>
+        <div class="steps-container">
+          <div class="step-card">
+            <span class="step-idx">01</span>
+            <div class="step-body">
+              <h4>Brief & Geo-Targeting</h4>
+              <p>We analyze audience demographics, selected cinema circuits, key markets, and screening dates.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-idx">02</span>
+            <div class="step-body">
+              <h4>Network Allocation & Approvals</h4>
+              <p>Campaign allocation across UFO, Qube, PVR INOX, and Miraj servers with complete CBFC clearance validation.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-idx">03</span>
+            <div class="step-body">
+              <h4>48-Hour Digital Server Ingest</h4>
+              <p>Encrypted projection server packaging (DCP/JPEG2000) and scheduled deployment across chosen screens.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-idx">04</span>
+            <div class="step-body">
+              <h4>Proof of Performance & RoC</h4>
+              <p>Delivery of official Release on Certificate (RoC) logs and audit reports verifying every scheduled commercial playback.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Corporate Network Partners Strip WITH DISTINCT GRAPHIC LOGOS -->
+    <section class="bottom-partners-section" id="partners" aria-label="Official Cinema Network Partners">
+      <div class="container">
+        <div class="bottom-partners-card">
+          <div class="partners-header">
+            <span class="partners-eyebrow">ENTERPRISE DISTRIBUTION NETWORK</span>
+            <h3 class="partners-heading">Official Network Partners</h3>
+            <p class="partners-subtext">Direct server ingestion and authorized commercial exhibition across India's leading cinema networks</p>
+          </div>
+          <div class="partners-grid">
+            <!-- 1. UFO Moviez -->
+            <div class="partner-card">
+              <div class="partner-logo-box">
+                <svg class="partner-svg" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UFO Moviez Logo">
+                  <rect width="160" height="50" rx="8" fill="#141a28"/>
+                  <circle cx="28" cy="25" r="14" fill="#0284c7"/>
+                  <path d="M20 25C20 20.58 23.58 17 28 17C32.42 17 36 20.58 36 25C36 29.42 32.42 33 28 33" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="28" cy="25" r="4" fill="#38bdf8"/>
+                  <text x="50" y="27" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" letter-spacing="1.5">UFO</text>
+                  <text x="50" y="38" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" letter-spacing="2.5">MOVIEZ</text>
+                </svg>
+              </div>
+              <div class="partner-info">
+                <span class="partner-title">UFO Moviez</span>
+                <small class="partner-scope">Digital Cinema Network</small>
+              </div>
+            </div>
+
+            <!-- 2. Qube Cinema -->
+            <div class="partner-card">
+              <div class="partner-logo-box">
+                <svg class="partner-svg" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Qube Cinema Logo">
+                  <rect width="160" height="50" rx="8" fill="#141a28"/>
+                  <rect x="16" y="13" width="24" height="24" rx="5" fill="#f97316"/>
+                  <path d="M23 20L33 25L23 30V20Z" fill="#fff"/>
+                  <circle cx="34" cy="33" r="2.5" fill="#fff"/>
+                  <text x="48" y="27" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" letter-spacing="1">QUBE</text>
+                  <text x="48" y="38" fill="#fb923c" font-family="'Inter', sans-serif" font-size="8" font-weight="700" letter-spacing="1.5">CINEMA (REAL IMAGE)</text>
+                </svg>
+              </div>
+              <div class="partner-info">
+                <span class="partner-title">Qube Cinema</span>
+                <small class="partner-scope">Real Image DCI Servers</small>
+              </div>
+            </div>
+
+            <!-- 3. PVR INOX -->
+            <div class="partner-card">
+              <div class="partner-logo-box">
+                <svg class="partner-svg" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PVR INOX Logo">
+                  <rect width="160" height="50" rx="8" fill="#141a28"/>
+                  <rect x="14" y="14" width="22" height="22" rx="4" fill="#eab308"/>
+                  <text x="18" y="30" fill="#000" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="900">P</text>
+                  <text x="44" y="27" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" letter-spacing="1">PVR</text>
+                  <rect x="80" y="16" width="1.5" height="18" fill="#475569"/>
+                  <text x="89" y="27" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" letter-spacing="1">INOX</text>
+                  <text x="44" y="38" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.5">MEGA MULTIPLEX</text>
+                </svg>
+              </div>
+              <div class="partner-info">
+                <span class="partner-title">PVR INOX</span>
+                <small class="partner-scope">Premium Multiplex Chain</small>
+              </div>
+            </div>
+
+            <!-- 4. Miraj Cinemas -->
+            <div class="partner-card">
+              <div class="partner-logo-box">
+                <svg class="partner-svg" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Miraj Cinemas Logo">
+                  <rect width="160" height="50" rx="8" fill="#141a28"/>
+                  <circle cx="28" cy="25" r="13" fill="#dc2626"/>
+                  <path d="M22 30V20L28 25L34 20V30" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="48" y="27" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" letter-spacing="1">MIRAJ</text>
+                  <text x="48" y="38" fill="#f87171" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" letter-spacing="2">CINEMAS</text>
+                </svg>
+              </div>
+              <div class="partner-info">
+                <span class="partner-title">Miraj Cinemas</span>
+                <small class="partner-scope">Pan-India Multiplex Circuit</small>
+              </div>
+            </div>
+
+            <!-- 5. Cinépolis -->
+            <div class="partner-card">
+              <div class="partner-logo-box">
+                <svg class="partner-svg" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cinépolis Logo">
+                  <rect width="160" height="50" rx="8" fill="#141a28"/>
+                  <rect x="15" y="14" width="22" height="22" rx="11" fill="#2563eb"/>
+                  <circle cx="26" cy="25" r="5" fill="#facc15"/>
+                  <text x="45" y="27" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" letter-spacing="0.5">Cinépolis</text>
+                  <text x="45" y="38" fill="#60a5fa" font-family="'Inter', sans-serif" font-size="8" font-weight="700" letter-spacing="1.5">GLOBAL EXHIBITOR</text>
+                </svg>
+              </div>
+              <div class="partner-info">
+                <span class="partner-title">Cinépolis</span>
+                <small class="partner-scope">International Multiplex</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="section-badge">CONNECT WITH OUR DESK</div>
+          <h2>Plan Your Campaign with our Media Team.</h2>
+          <p>Share your brand goals, target territories, or preferred theatre networks. Our planning desk will immediately structure an optimal proposal.</p>
+          <div class="contact-details">
+            <a href="tel:+917695831102" class="contact-detail">
+              <div class="detail-icon">☎</div>
+              <div><small>PHONE / WHATSAPP</small><b>+91 76958 31102</b></div>
+            </a>
+            <a href="mailto:info@maajaainnovations.in" class="contact-detail">
+              <div class="detail-icon">✉</div>
+              <div><small>CORPORATE INQUIRIES</small><b>info@maajaainnovations.in</b></div>
+            </a>
+            <div class="contact-detail">
+              <div class="detail-icon">⌖</div>
+              <div><small>HEADQUARTERS</small><b>Chennai & Madurai, Tamil Nadu, India</b></div>
+            </div>
+          </div>
+        </div>
+        <form class="enquiry-form" id="enquiry-form">
+          <div class="form-heading">
+            <h4>Campaign Proposal Request</h4>
+            <span class="badge-req">* Required fields</span>
+          </div>
+          <div class="form-row">
+            <label>Full Name *<input name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label>Company / Brand<input name="company" autocomplete="organization" placeholder="Enterprise / Agency name"></label>
+          </div>
+          <div class="form-row">
+            <label>Business Email *<input type="email" name="email" autocomplete="email" required placeholder="corporate@company.com"></label>
+            <label>Direct Phone *<input type="tel" name="phone" autocomplete="tel" required placeholder="+91"></label>
+          </div>
+          <label>Enquiring As *
+            <select name="enquiryType" required>
+              <option value="">Select profile</option>
+              <option>Enterprise Brand Advertiser</option>
+              <option>Media Buying Agency</option>
+              <option>Cinema Owner / Operator</option>
+              <option>Corporate Partner</option>
+            </select>
+          </label>
+          <label>Solution Scope *
+            <select name="service" id="service-select" required>
+              <option value="">Choose solution</option>
+              <option>On-screen cinema advertisements</option>
+              <option>Slide advertisements</option>
+              <option>Theatre space branding</option>
+              <option>End-to-end campaign management</option>
+              <option>Regional and pan-India campaigns</option>
+              <option>Strategic theatre partnerships</option>
+              <option>Comprehensive Media Planning</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>Target Territories<input name="region" placeholder="e.g. Chennai, Pan-India, South India"></label>
+            <label>Preferred Network / Chains<input name="network" placeholder="e.g. UFO Moviez, Qube, PVR INOX"></label>
+          </div>
+          <label>Campaign Brief & Objectives *<textarea name="message" required rows="4" placeholder="Audience targets, duration, screening timeline..."></textarea></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>I consent to Maa Jaa Innovations contacting me regarding this campaign requirement.</span></label>
+          <button type="submit" class="button button-primary submit-btn">Submit Campaign Request <span>→</span></button>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand-col">
+        <a class="brand" href="#top">
+          <img src="navbar_logo.png" alt="Maa Jaa Innovations" class="footer-brand-img">
+        </a>
+        <p>Pan-India cinema advertising network covering 12,500+ digital screens across 650+ cities in 28 states.</p>
+        <span class="footer-location">Chennai / Madurai, Tamil Nadu, India</span>
+      </div>
+      <div class="footer-col">
+        <h3>NAVIGATION</h3>
+        <a href="#about">About</a>
+        <a href="#networks">Networks</a>
+        <a href="#services">Solutions</a>
+        <a href="#approach">Workflow</a>
+        <a href="#partners">Partnerships</a>
+      </div>
+      <div class="footer-col">
+        <h3>SOLUTIONS</h3>
+        <a href="#services">On-Screen Ads</a>
+        <a href="#services">Slide Displays</a>
+        <a href="#services">Theatre Space Branding</a>
+        <a href="#services">Campaign Logistics</a>
+      </div>
+      <div class="footer-col">
+        <h3>NETWORK PARTNERS</h3>
+        <span class="footer-network-item"><span class="footer-dot dot-ufo">●</span> UFO Moviez</span>
+        <span class="footer-network-item"><span class="footer-dot dot-qube">●</span> Qube Cinema (Real Image)</span>
+        <span class="footer-network-item"><span class="footer-dot dot-pvr">●</span> PVR INOX</span>
+        <span class="footer-network-item"><span class="footer-dot dot-miraj">●</span> Miraj Cinemas</span>
+        <span class="footer-network-item"><span class="footer-dot dot-cinepolis">●</span> Cinépolis</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Maa Jaa Innovations. All rights reserved.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/917695831102?text=Hello%20Maa%20Jaa%20Innovations%2C%20I%20would%20like%20to%20enquire%20about%20cinema%20advertising." target="_blank" rel="noopener noreferrer" aria-label="Contact Maa Jaa Innovations"><span aria-hidden="true">◉</span><b>Contact Media Desk</b></a>
+  <script src="script.js"></script>
+</body>
+</html>
